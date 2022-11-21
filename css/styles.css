@@ -169,9 +169,27 @@ h1, h2, h3, h4, h5, h6, p {
   .account .flex-container_account {
     margin: 0 auto;
     flex-direction: column;
+    padding-top: 30px;
   }
-  .account .addBtn, .account .addStepBtn, .account .attachBtn {
-    margin-right: 20px;
+  .account .boxOne_account {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 738px) {
+  .account {
+    margin: 0 auto;
+    height: 1200px;
+    margin-bottom: -110px;
+  }
+  .account .flex-container_account {
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .account .boxOne_account {
+    padding-left: 50px;
+    padding-top: 30px;
   }
 }
 .container {
