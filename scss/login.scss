@@ -1,0 +1,118 @@
+.account{
+    background-color: #FFD972;
+    height: 740px;
+    width: 100%;
+    margin-bottom: -75px;
+    
+    input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-width: medium;
+        display: block;
+        background: transparent;
+        border-bottom: 3px solid black;
+        margin-bottom: 45px;
+        font-family: Lato;
+        color: black;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder { 
+        color: black;
+        font-size: 12px;
+        font-family: Lato;
+    }
+
+    .flex-container_account{
+        display: flex;
+        flex-direction: row;
+        width: clamp(600px, 1200px, 100%);
+        margin: 0px auto;
+        padding-top: 130px;
+
+        .boxOne_account, .boxTwo_account{
+            position: relative;
+            left: 150px;
+        }
+
+
+        .boxOne_account{
+            position: relative;
+            top: 110px;
+            width: 500px;
+            height: 500px;
+
+            .title{
+                font-family: LatoBlack;
+                font-size: 26px;
+                padding-bottom: 30px;
+            }
+
+            #logBtn{
+                height: 45px;
+                width: 210px;
+                border: none;
+                border-radius: 43px;
+                text-align: center;
+                border-radius: 43px;
+                color: black;
+                background-color: #FFD972;
+                box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+        }
+
+        .boxTwo_account{
+            left: 180px;
+            width: 500px;
+            height: 500px;
+            padding: 15px;
+
+            .title{
+                letter-spacing: 2px;
+                font-size: 30px;
+                font-family: Lato;
+                padding-bottom: 40px;
+            }
+
+            .subtext{
+                font-family: LatoIt;
+                position: relative;
+                bottom: -10px;
+            }
+
+            #signBtn{
+                height: 45px;
+                width: 250px;
+                border: none;
+                border-radius: 43px;
+                text-align: center;
+                border-radius: 43px;
+                color: black;
+                background-color: #FFD972;
+                box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 738px){
+    .account{
+        margin: 0 auto;
+        height: 1200px;
+        margin-bottom: -110px;
+
+    .flex-container_account{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+        .addBtn, .addStepBtn, .attachBtn{
+            margin-right: 20px;
+        }
+    }
+}
