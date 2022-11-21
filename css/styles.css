@@ -169,9 +169,27 @@ h1, h2, h3, h4, h5, h6, p {
   .account .flex-container_account {
     margin: 0 auto;
     flex-direction: column;
+    padding-top: 30px;
   }
-  .account .addBtn, .account .addStepBtn, .account .attachBtn {
-    margin-right: 20px;
+  .account .boxOne_account {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 738px) {
+  .account {
+    margin: 0 auto;
+    height: 1200px;
+    margin-bottom: -110px;
+  }
+  .account .flex-container_account {
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .account .boxOne_account {
+    padding-left: 50px;
+    padding-top: 30px;
   }
 }
 .container {
@@ -219,7 +237,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-#footer {
+footer {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -227,15 +245,14 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   position: relative;
 }
-#footer .copyright {
+footer .copyright {
   font-family: LatoIt;
   font-size: 13px;
   height: 70px;
   text-align: center;
   line-height: 70px;
-  max-width: 200px;
 }
-#footer .footer-menu {
+footer .footer-menu {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -244,37 +261,37 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   cursor: pointer;
 }
-#footer .footer-menu a {
+footer .footer-menu a {
   font-family: LatoIt;
   font-size: 13px;
   text-decoration: none;
   color: black;
 }
-#footer .footer-menu .footer-name {
+footer .footer-menu .footer-name {
   margin-right: 45px;
 }
-#footer .footer-menu .recipe-category-name {
+footer .footer-menu .recipe-category-name {
   margin-right: 45px;
 }
-#footer .footer-menu .privacy-copyright {
+footer .footer-menu .privacy-copyright {
   margin-right: 45px;
 }
-#footer .footer-menu .create-recipe {
+footer .footer-menu .create-recipe {
   margin-right: 45px;
 }
-#footer .footer-menu .your-recipes {
+footer .footer-menu .your-recipes {
   margin-right: 45px;
 }
-#footer .social-media {
+footer .social-media {
   display: flex;
   flex-flow: row nowrap;
   height: 70px;
 }
-#footer .social-media .facebook-logo {
+footer .social-media .facebook-logo {
   width: 20px;
   margin-right: 30px;
 }
-#footer .social-media .instagram-logo {
+footer .social-media .instagram-logo {
   width: 20px;
 }
 
@@ -462,6 +479,113 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .formHolder .addBtn, .formHolder .addStepBtn, .formHolder .attachBtn {
     margin-right: 20px;
+  }
+}
+.formHolder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: clamp(600px, 1200px, 100%);
+  margin: 0px auto;
+  height: 100%;
+}
+.formHolder input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: medium;
+  display: block;
+  background: transparent;
+  border-bottom: 3px solid black;
+  margin-bottom: 85px;
+  font-family: Lato;
+  color: black;
+  outline: none;
+}
+.formHolder .attachBtn {
+  width: 110px;
+  height: 40px;
+  background-color: #EFA7A7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 16px;
+  font-family: Caveat;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  margin-top: 275px;
+  user-select: none;
+  font-weight: bold;
+}
+.formHolder .addStepBtn, .formHolder .addBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #EFA7A7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  user-select: none;
+  font-weight: bold;
+}
+.formHolder .addStepBtn {
+  margin-bottom: 180px;
+}
+.formHolder .addBtn {
+  margin-bottom: 600px;
+}
+.formHolder .editRecipe, .formHolder .editIngredients, .formHolder .editInstruction {
+  display: flex;
+  flex-direction: column;
+  width: clamp(600px, 1200px, 100%);
+  margin: 0px auto;
+}
+.formHolder .editRecipe .title, .formHolder .editIngredients .title, .formHolder .editInstruction .title {
+  font-family: Lato;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.formHolder .editRecipe .message, .formHolder .editIngredients .message, .formHolder .editInstruction .message {
+  font-family: Caveat;
+  font-size: 25px;
+  padding-bottom: 60px;
+}
+.formHolder .editRecipe {
+  padding-top: 200px;
+}
+.formHolder .editIngredients {
+  padding-top: 50px;
+}
+.formHolder .editInstruction {
+  padding-top: 50px;
+}
+.formHolder .editRecipeBtn {
+  margin: 0 auto;
+  width: 400px;
+  height: 35px;
+  border: none;
+  background-color: #EFA7A7;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  font-family: Caveat;
+  font-size: 20px;
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 738px) {
+  .formHolder {
+    margin: 0 auto;
   }
 }
 

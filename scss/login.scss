@@ -109,10 +109,33 @@
     .flex-container_account{
         margin: 0 auto;
         flex-direction: column;
+        padding-top: 30px;
     }
 
-        .addBtn, .addStepBtn, .attachBtn{
-            margin-right: 20px;
-        }
+    .boxOne_account{
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+        
+    }
+}
+
+@media screen and (max-width: 738px){
+    .account{
+        margin: 0 auto;
+        height: 1200px;
+        margin-bottom: -110px;
+
+    .flex-container_account{
+        margin: 0 auto;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .boxOne_account{
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+        
     }
 }
