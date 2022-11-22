@@ -596,6 +596,15 @@ footer .social-media .instagram-logo {
   }
 }
 
+body {
+  background-image: url("../img/recipe-hero.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #FFD972;
+}
+
 .row {
   display: flex;
   flex-flow: row nowrap;
@@ -663,5 +672,9 @@ footer .social-media .instagram-logo {
 
 .icon p {
     font-family: LatoReg;
+}
+
+.ingredients-fact {
+
 }
 /*# sourceMappingURL=styles.css.map */
