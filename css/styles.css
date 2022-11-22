@@ -613,9 +613,9 @@ body {
 
 .recipe-content {
   font-family: CaveatBold;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 120px;
-  padding: 2.0em 5.0em;
+  padding: 7.0em 5.0em;
   display: block;
   margin: 0 auto;
   max-width: 1500px;
