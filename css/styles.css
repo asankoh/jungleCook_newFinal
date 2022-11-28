@@ -588,6 +588,16 @@ footer .social-media .instagram-logo {
     margin: 0 auto;
   }
 }
+
+body {
+  background-image: url("../img/recipe-hero.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #FFD972;
+}
+
 .row {
   display: flex;
   flex-flow: row nowrap;
@@ -596,9 +606,9 @@ footer .social-media .instagram-logo {
 
 .recipe-content {
   font-family: CaveatBold;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 120px;
-  padding: 2em 5em;
+  padding: 2.0em 5.0em;
   display: block;
   margin: 0 auto;
   max-width: 1500px;
@@ -656,5 +666,4 @@ footer .social-media .instagram-logo {
 .icon p {
   font-family: LatoReg;
 }
-
 /*# sourceMappingURL=styles.css.map */
