@@ -6,13 +6,13 @@
     display: block;
     margin: 0 auto;
     max-width: 1500px;
-  }
+  
   
   .recipe-food {
     display: flex;
     flex-flow: row nowrap;
     margin: 50px;
-  }
+  
   
   .recipe-food img {
     height: 300px;
@@ -24,7 +24,7 @@
     width: 244px;
     background-color: white;
     border-radius: 20px;
-  }
+  
   
   .ingredients-direction h2 {
     font-size: 20px;
@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     height: 44px;
-  }
+  
   
   .icon img {
       width: 30px;
@@ -60,3 +60,7 @@
   .icon p {
       font-family: LatoReg;
   }
+}
+}
+}
+}

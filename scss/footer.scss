@@ -9,11 +9,15 @@ footer {
   
   
   .copyright {
+    display: flex;
     font-family: LatoIt;
     font-size: 13px;
     height: 70px;
     text-align: center;
     line-height: 70px;
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: center
   }
   
   .footer-menu {
@@ -72,7 +76,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 738px){
+@media screen and (max-width: 768px){
  #footer{
   margin: 0 auto;
 
@@ -80,7 +84,32 @@ footer {
     font-size: 10px;
 }
 
+.copyright{
+  width: 300px;
+  font-size: 9px;
+  padding-top: 15px;
+}
+
 }
 
 
 }
+
+@media screen and (max-width: 360px){
+  #footer{
+   margin: 0 auto;
+ 
+ .footer-menu a{
+     font-size: 10px;
+ }
+ 
+ .copyright{
+   width: 300px;
+   font-size: 9px;
+   padding-top: 15px;
+ }
+ 
+ }
+ 
+ 
+ }
