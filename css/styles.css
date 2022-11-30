@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-html, 
-body {
+html, body {
   height: 100%;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
@@ -631,7 +624,7 @@ footer .social-media .instagram-logo {
   font-family: CaveatBold;
   font-size: 35px;
   margin-top: 120px;
-  padding: 7.0em 5.0em;
+  padding: 2.0em 5.0em;
   display: block;
   margin: 0 auto;
   max-width: 1500px;
@@ -683,114 +676,10 @@ footer .social-media .instagram-logo {
 }
 
 .icon img {
-    width: 30px;
+  width: 30px;
 }
 
 .icon p {
-    font-family: LatoReg;
-}
-
-.ingredients-content {
-  padding-top: 150px;
-}
-
-.food-information {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.food-title {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.food-title img {
-  width: 450px
-}
-
-.food-title p {
-  font-size: 25px;
-  font-family: LatoReg;
-  text-orientation: sideways-right;
-  writing-mode: vertical-rl;
-  text-align: center;
-}
-
-.descriptions {
-  width: 350px;
-  margin-left: 60px;
-}
-
-.description-title {
-  font-size: 30px;
   font-family: LatoReg;
 }
-
-.description-paragraph {
-  font-size: 17px;
-  font-family: LatoReg;
-}
-
-.time {
-  font-size: 20px;
-  font-family: LatoBlack;
-}
-
-.hours-minutes {
-  font-size: 20px;
-  font-family: CaveatRegular;
-}
-
-.servings {
-  font-size: 20px;
-  font-family: LatoBlack;
-}
-
-.serving-amount {
-  font-size: 20px;
-  font-family: CaveatRegular;
-}
-
-.ingredients, .instructions {
-  width: 825px;
-  margin-top: 44px;
-}
-
-.ingredients {
-  font-size: 25px;
-  font-family: LatoReg;
-}
-
-.ingredients-instructions {
-  font-size: 20px;
-  font-family: CaveatRegular;
-}
-
-.instructions {
-  font-size: 25px;
-  font-family: LatoReg;
-}
-
-.cooking-instructions {
-  font-size: 20px;
-  font-family: CaveatRegular;
-}
-
-.edit-recipe-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  height: 45px;
-  width: 190px;
-  background-color: #daa104;
-}
-
-.edit-recipe-button p {
-  margin-top: 15px;
-}
-
-
 /*# sourceMappingURL=styles.css.map */
