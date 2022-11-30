@@ -8,60 +8,63 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="container">
-      <header>
-          <img src="img/logo.svg" alt="logo">
-      </header>
-      <nav>
-          <a href="#home">Home</a>
-          <a href="#browse">Browse</a>
-          <a href="#createrecipe">Create Recipe</a>
-          <a href="#logout"><button onclick="logOut">Logout</button></a>
-      </nav>
-  </div>
-  
-  <div class="recipe-content">
-    <p>Hey Michael, here are your recipes</p>
-    <div class="recipe-food">
-        <img src="img/recipe-pizza.jpg" alt="pizza">
-        <div class="ingredients-direction">
-            <h2>Supreme Pizza</h2>
-            <div class="title-underline">
-            </div>
-            <p>Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!</p>
-            <div class="icon">
-                <img src="img/time.svg" alt="clock">
-                <p>1h 24min</p>
-            </div>
-            <div class="icon">
-                <img src="img/servings.svg" alt="servings">
-                <p>4 servings</p>
+    <div class="your-recipe-background">
+        <div class="container">
+        <header>
+            <img src="img/logo.svg" alt="logo">
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#browse">Browse</a>
+            <a href="#createrecipe">Create Recipe</a>
+            <a href="#logout"><button onclick="logOut">Logout</button></a>
+        </nav>
+    </div>
+    
+    <div class="recipe-content">
+        <p>Hey Michael, here are your recipes</p>
+        <div class="recipe-food">
+            <a class="food-picture" href="pages/viewrecipepizza.html"><img  src="img/recipe-pizza.jpg" alt="pizza"></a>
+            <div class="ingredients-direction">
+                <h2>Supreme Pizza</h2>
+                <div class="title-underline">
+                </div>
+                <p>Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!</p>
+                <div class="icon">
+                    <img src="img/time.svg" alt="clock">
+                    <p>1h 24min</p>
+                </div>
+                <div class="icon">
+                    <img src="img/servings.svg" alt="servings">
+                    <p>4 servings</p>
+                </div>
             </div>
         </div>
     </div>
+    <footer id="footer">
+        <div class="copyright">
+            <p>Copyright © 2019 The Jungle Cook</p>
+        </div>
+        <div class="footer-menu">
+            <a class="footer-name" href="#login">Login</a>
+            <a class="recipe-category-name" href="#">Recipes by Category</a>
+            <a class="privacy-copyright" href="#">Privacy and Copyright</a>
+            <a class="create-recipe" href="#createrecipe">Create Recipe</a>
+            <a class="your-recipes" href="#">Your Recipes</a>
+        </div>
+        <div class="social-media">
+            <img class="facebook-logo" src="img/facebook.svg" alt="facebook">
+            <img class="instagram-logo" src="img/instagram.svg" alt="instagram">
+        </div>
+    </footer>
   </div>
 
-<footer id="footer">
-    <div class="copyright">
-        <p>Copyright © 2019 The Jungle Cook</p>
-    </div>
-    <div class="footer-menu">
-        <a class="footer-name" href="#login">Login</a>
-        <a class="recipe-category-name" href="#">Recipes by Category</a>
-        <a class="privacy-copyright" href="#">Privacy and Copyright</a>
-        <a class="create-recipe" href="#createrecipe">Create Recipe</a>
-        <a class="your-recipes" href="#">Your Recipes</a>
-    </div>
-    <div class="social-media">
-        <img class="facebook-logo" src="img/facebook.svg" alt="facebook">
-        <img class="instagram-logo" src="img/instagram.svg" alt="instagram">
-    </div>
-</footer>
+
 
  <script src="lib/jquery-3.6.1.min.js"></script>
  <script src="app/app.js" type="module"></script>
  <script src="app/model.js" type="module"></script>
-
+ 
 </body>
 
 </html>
