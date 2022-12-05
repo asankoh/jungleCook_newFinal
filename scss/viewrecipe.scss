@@ -1,21 +1,18 @@
 .ingredients-content {
   padding-top: 150px;
-
-.row{
-
-
+}
 
 .food-information {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-
+}
 
 .food-title {
   display: flex;
   flex-flow: row nowrap;
-
+}
 
 .food-title img {
   width: 450px
@@ -28,12 +25,11 @@
   writing-mode: vertical-rl;
   text-align: center;
 }
-}
 
 .descriptions {
   width: 350px;
   margin-left: 60px;
-
+}
 
 .description-title {
   font-size: 30px;
@@ -48,25 +44,21 @@
 .time {
   font-size: 20px;
   font-family: LatoBlack;
-
+}
 
 .hours-minutes {
   font-size: 20px;
   font-family: CaveatRegular;
 }
-}
 
 .servings {
   font-size: 20px;
   font-family: LatoBlack;
-
+}
 
 .serving-amount {
   font-size: 20px;
   font-family: CaveatRegular;
-}
-}
-}
 }
 
 .ingredients, .instructions {
@@ -77,24 +69,22 @@
 .ingredients {
   font-size: 25px;
   font-family: LatoReg;
-
+}
 
 .ingredients-instructions {
   font-size: 20px;
   font-family: CaveatRegular;
 }
-}
 
 .instructions {
   font-size: 25px;
   font-family: LatoReg;
-
+}
 
 .cooking-instructions {
   font-size: 20px;
   font-family: CaveatRegular;
 }
-
 
 .edit-recipe-button {
   display: flex;
@@ -108,8 +98,4 @@
 
 .edit-recipe-button p {
   margin-top: 15px;
-}
-}
-
-}
 }
