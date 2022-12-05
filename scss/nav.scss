@@ -12,7 +12,7 @@
     right: 600px;
   }
 
-nav {
+  nav {
     z-index: 9999;
     cursor: pointer;
     height: 100px;
@@ -20,7 +20,33 @@ nav {
     align-items: center;
     justify-content: end;
     padding-top: 80px;
-  
+
+
+    // Part One of Hamburger Menu Code
+    .mainMenu{
+      display: flex;
+      list-style: none;
+
+      li a {
+        display: inline-block;
+      }
+
+    }
+
+    .openMenu{
+      font-size: 24px;
+      margin-right: -60px;
+      margin-top: -80px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .closeMenu{
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+    }
+    // End of Part One of hamburger menu code
   
    a {
     font-family: CaveatRegular;
@@ -45,9 +71,40 @@ nav {
     box-shadow: 0px 7px rgb(0, 0, 0, 0.4);
     cursor: pointer;
   }
+
 }
 }
 
-@media screen and (max-width: 738px){
+@media (max-width: 800px){
+ nav .mainMenu{
+  // The responisveness for the hamburger menu to appear
+        height: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        background-color: white;
+        /* transition top is the animation of the hamburger menu coming from the top of the page */
+        display: none;
+
+  }
   
+
+.container nav .mainMenu .closeMenu{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
 }
+
+.container nav .openMenu{
+  display: block;
+}
+
+}
+
