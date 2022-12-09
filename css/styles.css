@@ -280,6 +280,13 @@ h1, h2, h3, h4, h5, h6, p {
   .container nav .openMenu {
     display: block;
   }
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 1;
+    margin-right: -140px;
+  }
 }
 footer {
   width: 100%;
@@ -289,7 +296,6 @@ footer {
   align-items: center;
   position: relative;
 }
-
 footer .copyright {
   display: flex;
   font-family: LatoIt;
@@ -426,6 +432,14 @@ footer .social-media .instagram-logo {
   font-size: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: -500px;
+  }
+  .content .yellow_circle {
+    margin-left: -500px;
+  }
+}
 .formHolder {
   position: relative;
   display: flex;
@@ -645,37 +659,12 @@ footer .social-media .instagram-logo {
   }
 }
 body {
-
-.recipe-background {
   background-image: url("../img/recipe-hero.jpg");
-  height: 1430px;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.your-recipe-background {
-  background-image: url("../img/recipe-hero.jpg");
-  height: 1430px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.your-recipe-background {
-  background-image: url("../img/recipe-hero.jpg");
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.view-recipe-background {
-  background-color: white;
-}
-
-.food-picture:hover img {
-  opacity: .6;
+  background-color: #FFD972;
 }
 
 .row {
