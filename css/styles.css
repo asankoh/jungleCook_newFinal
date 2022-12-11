@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 768px) {
   nav .mainMenu {
-    height: 50%;
+    height: 75%;
     position: fixed;
     top: 0;
     right: 0;

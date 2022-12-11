@@ -22,13 +22,13 @@ function route(){
     if(pageID == ""){
         MODEL.changePage("home");
     } else if (pageID == "login"){
-        MODEL.changePage(pageID, logInListener, signupListener, logOutListener,)
+        MODEL.changePage(pageID, logInListener, signupListener, logOutListener, close, show)
     } else if (pageID == "createrecipe"){
-        MODEL.changePage(pageID)
+        MODEL.changePage(pageID, alertListener)
     }else if (pageID == "recipes"){
         MODEL.changePage(pageID)
     }else if (pageID == "yourrecipe"){
-    MODEL.changePage(pageID)
+    MODEL.changePage(pageID, alertListener)
     }else{
     MODEL.changePage(pageID)
 }
@@ -91,7 +91,9 @@ function logInListener() {
         <li><a href="#recipes">Browse</a></li>
         <li><a href="#createrecipe">Create Recipe</a></li>
         <li><a href="#yourrecipe">Your Recipes</a></li>
-        <li><a href="#login"><button  onclick="logIn" id="login_nav">Logout</button></a></li>`)
+        <li><a href="#login"><button  onclick="logIn" id="login_nav">Logout</button></a></li>
+        <div class="closeMenu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+        `)
         }
     })
 }
@@ -164,7 +166,15 @@ function signupListener(){
 }
 
 function alertListener (){
-
+if (MODEL.loginStatus == 1){
+    Swal.fire({
+        icon: 'error',
+        title: 'Access Limit Error',
+        text: 'Please Login to access page',
+      }).then(function() {
+        window.location.href = '#login';
+    });
+}
 }
 
 
