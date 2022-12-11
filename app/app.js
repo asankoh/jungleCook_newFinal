@@ -84,12 +84,7 @@ function logInListener() {
             $("#login_pw").val("")
 
         $("#login_nav").html('Logout')
-       $(".mainMenu").append(`<li><a 
-       <li><a href="#yourrecipe">Your Recipes</a></li>`
- )
-     
-
-
+  
         }
     })
 }
