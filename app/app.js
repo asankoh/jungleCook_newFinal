@@ -22,12 +22,14 @@ function route(){
     if(pageID == ""){
         MODEL.changePage("home");
     } else if (pageID == "login"){
-        MODEL.changePage(pageID, logInListener)
+        MODEL.changePage(pageID, logInListener, signupListener, logOutListener,)
     } else if (pageID == "createrecipe"){
         MODEL.changePage(pageID)
     }else if (pageID == "recipes"){
         MODEL.changePage(pageID)
-} else{
+    }else if (pageID == "yourrecipe"){
+    MODEL.changePage(pageID)
+    }else{
     MODEL.changePage(pageID)
 }
 }
@@ -83,10 +85,86 @@ function logInListener() {
             $("#login_em").val("")
             $("#login_pw").val("")
 
-        $("#login_nav").html('Logout')
-  
+            MODEL.setLoginStatus(2)
+
+        $(".mainMenu").html(`<li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Browse</a></li>
+        <li><a href="#createrecipe">Create Recipe</a></li>
+        <li><a href="#yourrecipe">Your Recipes</a></li>
+        <li><a href="#login"><button  onclick="logIn" id="login_nav">Logout</button></a></li>`)
         }
     })
+}
+
+function logOutListener() {
+    $("#login_nav").on("click", () => {
+        MODEL.setLoginStatus(1)
+        $(".mainMenu").html(`<li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Browse</a></li>
+        <li><a href="#createrecipe">Create Recipe</a></li>
+        <li><a href="#login"><button  onclick="logIn" id="login_nav">Login</button></a></li>`)
+        
+
+    })
+}
+
+
+function signupListener(){
+    $("#signupBtn").on("click", (e) =>{
+        let fn = $("#fName").val()
+        let ln = $("#lName").val()
+        let em = $("#email").val()
+        let pw = $("#password").val()
+
+        if(fn == ""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter First Name',
+              })
+        } else if (ln == ""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter Last Name',
+              })
+        } else if (em == ""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter Email ',
+              })
+        } else if (pw == ""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter Password',
+              })
+        } else{
+            Swal.fire(
+                'Good job!',
+                'Thanks for Signing Up!',
+                'success'
+              )
+
+              MODEL.setLoginStatus(2)
+
+
+            $("#fName").val("") 
+            $("#lName").val("") 
+            $("#email").val("") 
+            $("#password").val("") 
+        
+        }
+
+        
+    })
+
+    
+}
+
+function alertListener (){
+
 }
 
 
@@ -95,6 +173,4 @@ initApp()
 initListeners();
 show()
 close()
-logInListener()
-
 });

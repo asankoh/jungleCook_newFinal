@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   bottom: -10px;
 }
-.account .flex-container_account .boxTwo_account #signBtn {
+.account .flex-container_account .boxTwo_account #signupBtn {
   height: 45px;
   width: 250px;
   border: none;
