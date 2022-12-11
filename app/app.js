@@ -16,14 +16,20 @@ function initListeners() {
  * If the hash tag is empty, change the page to home, otherwise change the page to the hash tag.
  */
 function route(){
-    let hashTag = window.location.hash;
-    let pageID = hashTag.replace("#", "");
+    let hashtagLink = window.location.hash //get page from hashtag in url 
+    let pageID = hashtagLink.replace("#", "")
 
     if(pageID == ""){
         MODEL.changePage("home");
-    } else{
+    } else if (pageID == "login"){
+        MODEL.changePage(pageID, logInListener)
+    } else if (pageID == "createrecipe"){
         MODEL.changePage(pageID)
-    }
+    }else if (pageID == "recipes"){
+        MODEL.changePage(pageID)
+} else{
+    MODEL.changePage(pageID)
+}
 }
 
 
@@ -54,10 +60,46 @@ function close(){
     mainMenu.style.top = '-100%'
 }
 
+//login 
+function logInListener() {
+    $("#logBtn").on("click", function(e) {
+        //store values
+        let logem = $("#login_em").val()
+        let logpw = $("#login_pw").val()
+        
+        if(logem == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter Email & Password',
+              })
+        } else if(logpw == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Content Error',
+                text: 'Please Enter Password',
+              })
+        } else if (logem && logpw != ""){
+            $("#login_em").val("")
+            $("#login_pw").val("")
+
+        $("#login_nav").html('Logout')
+       $(".mainMenu").append(`<li><a 
+       <li><a href="#yourrecipe">Your Recipes</a></li>`
+ )
+     
+
+
+        }
+    })
+}
+
+
 $(document).ready(function () {
 initApp()
 initListeners();
 show()
 close()
+logInListener()
 
 });
