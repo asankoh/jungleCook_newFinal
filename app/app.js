@@ -5,6 +5,10 @@ import * as MODEL from "./model.js";
  * When a user clicks on a link in the navigation bar, the function will log the id of the link to the
  * console.
  */
+
+var ingredCnt = 3;
+var stepCnt = 3;
+
 function initListeners() {
     $("nav a").click((e) => {
         let btnID = e.currentTarget.id;
@@ -24,7 +28,7 @@ function route(){
     } else if (pageID == "login"){
         MODEL.changePage(pageID, logInListener, signupListener, logOutListener, close, show)
     } else if (pageID == "createrecipe"){
-        MODEL.changePage(pageID, alertListener)
+        MODEL.changePage(pageID, addIngredListener, )
     }else if (pageID == "recipes"){
         MODEL.changePage(pageID)
     }else if (pageID == "yourrecipe"){
@@ -176,6 +180,45 @@ if (MODEL.loginStatus == 1){
     });
 }
 }
+
+function addIngredListener(){
+$(".addBtn").on("click", (e) => {
+    $(".formHolder .addIngredients").append(`<input type="text" placeholder = "Ingredient #${ingredCnt + 1}"id="ingred${ingredCnt}">`)
+    ingredCnt++;
+})
+
+$(".addStepBtn").on("click", (e)=>{
+    $(".formHolder .addInstruction").append(`<input type="text" placeholder = "Instructions   #${stepCnt + 1}"id="step${stepCnt}">`)
+    stepCnt++;
+})
+
+$(".createRecipeBtn").on("click", (e) =>{
+    e.preventDefault()
+   
+    let recipeObj = {
+        name: "",
+        image: "",
+        description: "",
+        time: "",
+        servings: "",
+        steps: [],
+        ingredients: [],
+    }
+
+    recipeObj.name = $("#recipe_name").val()
+    MODEL.addRecipe(recipeObj)
+    
+    Swal.fire({
+        icon: 'Success',
+        title: 'Recipe Added',
+        text: 'Congrats, you created a new recipe!',
+      }).then(function() {
+        window.location.href = '#yourrecipe';
+    });
+})
+
+}
+
 
 
 $(document).ready(function () {
