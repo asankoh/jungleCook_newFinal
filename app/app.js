@@ -32,7 +32,7 @@ function route(){
     }else if (pageID == "recipes"){
         MODEL.changePage(pageID)
     }else if (pageID == "yourrecipe"){
-    MODEL.changePage(pageID, alertListener)
+    MODEL.changePage(pageID, alertListener, addIngredListener)
     }else{
     MODEL.changePage(pageID)
 }
@@ -206,15 +206,20 @@ $(".createRecipeBtn").on("click", (e) =>{
     }
 
     recipeObj.name = $("#recipe_name").val()
+    recipeObj.description = $("#recipe_desc").val()
+    recipeObj.time = $("#recipe_time").val()
+    recipeObj.servings = $("#recipe_size").val()
+
     MODEL.addRecipe(recipeObj)
-    
     Swal.fire({
         icon: 'Success',
         title: 'Recipe Added',
         text: 'Congrats, you created a new recipe!',
       }).then(function() {
-        window.location.href = '#yourrecipe';
-    });
+        window.location.hash = 'yourrecipe';
+    }); 
+
+
 })
 
 }
