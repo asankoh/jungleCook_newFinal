@@ -1,5 +1,7 @@
 # jungleCook_newFinal
 
+https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/
+
 jungleCook:
 
 JungleCook is a recipe collection webpage that includes the concept of CRUD allowing the users to do a numerous amount of things in the webpage. The users can go and create a new recipe, view the instructions of the given recipe, edit and update the content of past recipes as well as delete any recipes wanted. There is a login authenization provided if the user wants full accessibility to the webpage. Meaning that users that don't have an account aren't allowed to create or view their recipes. This is a project that was done by Abdul Sankoh and Tom Tran.
