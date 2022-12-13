@@ -673,155 +673,20 @@ body {
   justify-content: space-evenly;
 }
 
-.both-recipes {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 120px;
-}
-
 .recipe-content {
   font-family: CaveatBold;
   font-size: 30px;
+  margin-top: 120px;
+  padding: 2em 5em;
   display: block;
+  margin: 0 auto;
   max-width: 1500px;
-  padding-top: 150px;
-}
-
-.recipe-content p {
-  margin-left: 42px;
-}
-
-.recipe-content h2 {
-  margin-left: 55px;
-}
-
-.buttons {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-right: 120px;
-}
-
-.buttons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  margin-right: 95px;
-}
-
-.buttons button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
-.buttons a {
-  text-decoration: none;
-}
-
-.food-card {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .recipe-food {
   display: flex;
   flex-flow: row nowrap;
   margin: 50px;
-}
-
-.yourrecip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  position: absolute;
-  top: 350px;
-  left: 145px;
-}
-
-.yourrecip button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
-.secondrecipe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  position: absolute;
-  top: 350px;
-  left: 961px;
-}
-
-.secondrecipe button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: CaveatRegular;
-  font-size: 25px;
-  height: 45px;
-  width: 190px;
-  background-color: #FFD972;
-  border-radius: 43px;
-  border: none;
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.pilaf {
-  margin-top: 108px;
 }
 
 .recipe-food img {
@@ -869,6 +734,108 @@ body {
 
 .icon p {
   font-family: LatoReg;
+}
+
+.ingredients-content {
+  padding-top: 150px;
+}
+
+.food-information {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-title {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.food-title img {
+  width: 450px;
+}
+
+.food-title p {
+  font-size: 25px;
+  font-family: LatoReg;
+  text-orientation: sideways-right;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
+.descriptions {
+  width: 350px;
+  margin-left: 60px;
+}
+
+.description-title {
+  font-size: 30px;
+  font-family: LatoReg;
+}
+
+.description-paragraph {
+  font-size: 17px;
+  font-family: LatoReg;
+}
+
+.time {
+  font-size: 20px;
+  font-family: LatoBlack;
+}
+
+.hours-minutes {
+  font-size: 20px;
+  font-family: CaveatRegular;
+}
+
+.servings {
+  font-size: 20px;
+  font-family: LatoBlack;
+}
+
+.serving-amount {
+  font-size: 20px;
+  font-family: CaveatRegular;
+}
+
+.ingredients, .instructions {
+  width: 825px;
+  margin-top: 44px;
+}
+
+.ingredients {
+  font-size: 25px;
+  font-family: LatoReg;
+}
+
+.ingredients-instructions {
+  font-size: 20px;
+  font-family: CaveatRegular;
+}
+
+.instructions {
+  font-size: 25px;
+  font-family: LatoReg;
+}
+
+.cooking-instructions {
+  font-size: 20px;
+  font-family: CaveatRegular;
+}
+
+.edit-recipe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: CaveatRegular;
+  height: 45px;
+  width: 190px;
+  background-color: #daa104;
+}
+
+.edit-recipe-button p {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

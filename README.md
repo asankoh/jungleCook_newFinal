@@ -14,4 +14,4 @@ During the duration of time that was given to us for this project, we decided to
 
 -Tom
 
-My partner Tom was given the pages of view recipe, recipe and your recipe as well as making those pages responsive. During the process of the project, Tom also did the styling of the navigation bar and footer. Once the styling and responsiveness of the webpage was done, we directed our attention to the functionality of the page. In terms of the functionality of the pages, Tom agreed to work on the update and delete aspect of the CRUD for the project.
+My partner Tom was given the pages of view recipe, browse recipe and your recipe as well as making those pages responsive. He worked on the 1st two foods on the your recipe page. During the process of the project, Tom also did the styling of the navigation bar and footer. Once the styling and responsiveness of the webpage was done, we directed our attention to the functionality of the page. In terms of the functionality of the pages, Tom agreed to work on the update and delete aspect of the CRUD for the project.
