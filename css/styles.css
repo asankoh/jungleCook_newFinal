@@ -686,6 +686,11 @@ body {
   font-size: 30px;
   display: block;
   max-width: 1500px;
+  padding-top: 150px;
+}
+
+.recipe-content p {
+  margin-left: 42px;
 }
 
 .recipe-content h2 {
