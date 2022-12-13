@@ -2,6 +2,8 @@
  * When the user clicks on a link, the function will load the page with the same name as the link's ID.
  * @param pageID - The ID of the page you want to load.
  */
+ var recipe = []
+
  export function changePage(pageID, callback, callback2, callback3){
     if(pageID == "" || pageID == "home") {
         $.get(`pages/home.html`, function(data) {
@@ -32,6 +34,7 @@
     $.get(`pages/yourrecipeburger.html`, function(data) {
         $("#app").html(data) 
         callback()
+        callback2()
     })   
 
 }
@@ -45,5 +48,5 @@ export function setLoginStatus(status) {
 }
 
 export function addRecipe(recipeObj) {
-
+recipe.push(recipeObj)
 }
