@@ -1,8 +1,8 @@
 <div class="both-recipes">
-    <div class="food-card">
+    <div class="food-card" id="burger-card">
         <div class="recipe-content">
             <h2>Hey Michael, here are your recipes</h2>
-            <a href="#viewrecipeburger" class="yourrecip"><button>View</button></a>
+            <a href="pages/viewrecipeburger.html" class="yourrecip"><button>View</button></a>
                 <div class="recipe-food">
                 <img src="img/recipe-burger.jpg" alt="classicburger">
                 <div class="ingredients-direction">
@@ -22,16 +22,17 @@
         </div>
         <div class="buttons">
             <a href="#"><button onclick="">Edit</button></a>
-            <a href="#"><button onclick="">Delete</button></a>
+            <a href="#"><button onclick="deleterecipeburger()" id="deleterecipeburger">Delete</button></a>
         </div>
     </div>
 </div>
     
+<div class="food-card" id="biryani-card">
     <div class="recipe-content">
-        <a href="#viewrecipebiryani" class="secondrecipe"><button>View</button></a>
-        <div class="recipe-food pilaf">
-        <img src="img/recipe-pilaf.jpg" alt="biryanichicken">
-        <div class="ingredients-direction">
+       <a href="pages/viewrecipebiryani.html" class="secondrecipe"><button>View</button></a>
+            <div class="recipe-food pilaf">
+            <img src="img/recipe-pilaf.jpg" alt="biryanichicken">
+            <div class="ingredients-direction">
                 <h2>Chicken Biryani</h2>
             <div class="title-underline">
             </div>
@@ -48,7 +49,8 @@
     </div>
     <div class="buttons">
         <a href="#"><button onclick="">Edit</button></a>
-        <a href="#"><button onclick="">Delete</button></a>
+        <a href="#"><button onclick="" id="deleterecipebiryani">Delete</button></a>
     </div>
+</div>
 </div>
 </div>
